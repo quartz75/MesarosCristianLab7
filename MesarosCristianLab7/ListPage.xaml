@@ -5,18 +5,18 @@
              Title="ListPage">
     <StackLayout Margin="20">
         <Editor Placeholder="Enter the description of the shopping list"
-                Text="{Binding Description}"
-                HeightRequest="100" />
+ Text="{Binding Description}"
+ HeightRequest="100" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button Text="Save"
-                    Clicked="OnSaveButtonClicked" />
+ Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
-                    Text="Delete"
-                    Clicked="OnDeleteButtonClicked"/>
+ Text="Delete"
+ Clicked="OnDeleteButtonClicked"/>
         </Grid>
     </StackLayout>
 </ContentPage>

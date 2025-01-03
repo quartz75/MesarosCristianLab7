@@ -24,7 +24,7 @@ namespace MesarosCristianLab7.Data
         {
             return _database.Table<ShopList>()
             .Where(i => i.ID == id)
-            .FirstOrDefaultAsync();
+           .FirstOrDefaultAsync();
         }
         public Task<int> SaveShopListAsync(ShopList slist)
         {

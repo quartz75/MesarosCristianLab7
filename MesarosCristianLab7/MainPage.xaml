@@ -8,29 +8,13 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                Source="main.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
-            <VerticalStackLayout Spacing="20" Padding="15" HorizontalOptions="Center" VerticalOptions="Center">
-
-                <Image Source="cristian_ice.jpg" 
-               SemanticProperties.Description="Imaginea studentului" 
-               HeightRequest="150" />
-
-                <Label Text="Bun venit, Cristian Mesaros!" 
-               FontSize="24" 
-               FontAttributes="Bold" 
-               HorizontalOptions="Center" />
-
-                <Label Text="Aceasta este pagina personalizată pentru Cristian Mesaros."
-               FontSize="16"
-               HorizontalOptions="Center" />
-            </VerticalStackLayout>
-
             <Label
-                Text="Hello, World!"
+                Text="Salut, Cristian. Sesiunea de cumparaturi poate sa inceapa!"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
