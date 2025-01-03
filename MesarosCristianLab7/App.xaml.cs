@@ -1,5 +1,4 @@
-﻿
-using MesarosCristianLab7.Data;
+﻿using MesarosCristianLab7.Data;
 namespace MesarosCristianLab7
 {
     public partial class App : Application
