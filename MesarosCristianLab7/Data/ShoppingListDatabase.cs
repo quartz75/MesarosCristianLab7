@@ -103,9 +103,10 @@ namespace MesarosCristianLab7.Data
 
         }
 
-        internal async Task DeleteShopAsync(int iD)
+        public Task<int> DeleteShopAsync(Shop shop)
         {
-            throw new NotImplementedException();
+            return _database.DeleteAsync(shop);
         }
+
     }
 }

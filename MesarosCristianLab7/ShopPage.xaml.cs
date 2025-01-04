@@ -1,4 +1,4 @@
-using MesarosCristianLab7.Models;
+﻿using MesarosCristianLab7.Models;
 using Microsoft.Maui.Devices.Sensors;
 using Plugin.LocalNotification;
 namespace MesarosCristianLab7;
@@ -47,11 +47,9 @@ public partial class ShopPage : ContentPage
     async void OnDeleteButtonClicked(object sender, EventArgs e)
     {
         var shop = (Shop)BindingContext;
-        bool confirm = await DisplayAlert("Confirm Delete", "Are you sure you want to delete this shop?", "Yes", "No");
-
-        if (confirm)
+        if (shop != null)
         {
-            await App.Database.DeleteShopAsync(shop.ID);
+            await App.Database.DeleteShopAsync(shop);
             await Navigation.PopAsync();
         }
     }
